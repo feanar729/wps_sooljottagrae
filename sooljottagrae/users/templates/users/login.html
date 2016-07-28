@@ -3,6 +3,7 @@
 {% block content %}
     <body class="login-content">
         <!-- Login -->
+        {{ request.user }}
         <div class="lc-block toggled" id="l-login">
             <section>
                 <form action={% url "users:login" %} method="POST">
@@ -10,7 +11,7 @@
                     <div class="input-group m-b-20">
                         <span class="input-group-addon"><i class="md md-person"></i></span>
                         <div class="fg-line">
-                            <input type="text" name="nickname" class="form-control" placeholder="nickname을 적어주세요." required>
+                            <input type="text" name="username" class="form-control" placeholder="nickname을 적어주세요." required>
                         </div>
                     </div>
                 

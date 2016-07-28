@@ -160,20 +160,63 @@ PIPELINE = {
     'STYLESHEETS': {
         'sooljottagrae': {
             'source_filenames': (
-              'css/partials/*.css',
-              'css/*.css',
-              'vendors/*.css',
+                'css/main/*.css',
+                'vendors/*.css',
+                'vendors/animate-css/*.css',
+                'vendors/bootgride/*.css',
+                'vendors/bootstrap-select/*.css',
+                'vendors/chosen/*.css',
+                'vendors/farbtastic/*.css',
+                'vendors/fullcalendar/*.css',
+                'vendors/light-gallery/*.css',
+                'vendors/material-icons/*.css',
+                'vendors/noUiSlider/*.css',
+                'vendors/socicon/*.css',
+                'vendors/summernote/*.css',
+                'vendors/sweet-alert/*.css',
             ),
             'output_filename': 'css/sooljottagrae.css',
         }
     },
 
-    'JAVASCRIPT':{
-        'javascripts':{
-            'source_filenames':{
-                'js/*.js',
-                'js/flot-charts/*.js',
-            }    
+    'JAVASCRIPT': {
+        'jssooljottagrae': {
+            'source_filenames': (
+                'js/bootstrap/*.js',
+                'js/flot_charts/*.js',
+                'vendors/auto-size/*.js',
+                'vendors/bootgride/jquery.bootgrid.js',
+                'vendors/bootgride/jquery.bootgrid.min.js',
+                'vendors/bootgride/original/jquery.bootgrid.js',
+                'vendors/bootgride/original/jquery.bootgrid.min.js',
+                'vendors/bootstrap-dateimepicker/bootstrap-datetimepicker.js',
+                'vendors/bootstrap-dateimepicker/bootstrap-datetimepicker.min.js',
+                'vendors/bootstrap-growl/*.js',
+                'vendors/bootgride-select/*.js',
+                'vendors/bootgride-select/i18n/*.js',
+                'vendors/bootgride-wizard/*.js',
+                'vendors/chosen/*.js',
+                'vendors/easypiechart/*.js',
+                'vendors/farbtastic/*.js',
+                'vendors/fileinput/*.js',
+                'vendors/flot/*.js',
+                'vendors/flot/plugins/*.js',
+                'vendors/fullcalendar/*.js',
+                'vendors/fullcalendar/lang/*.js',
+                'vendors/fullcalendar/lib/*.js',
+                'vendors/input-mask/*.js',
+                'vendors/light-gallery/*.js',
+                'vendors/mediaelement/*.js',
+                'vendors/moment/*.js',
+                'vendors/nicescroll/*.js',
+                'vendors/noUiSlider/*.js',
+                'vendors/simpleWeather/*.js',
+                'vendors/sparklines/*.js',
+                'vendors/summernote/*.js',
+                'vendors/sweet-alert/*.js',
+                'vendors/waves/*.js',
+                ),
+            'output_filename': 'js/jssooljottagrae.js',
         }
     },
 }
