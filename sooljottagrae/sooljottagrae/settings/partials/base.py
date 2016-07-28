@@ -162,12 +162,18 @@ PIPELINE = {
             'source_filenames': (
               'css/partials/*.css',
               'css/*.css',
-              'font/weather-icons/*',
-              'fonts/*',
-              'less/*',
-              'vendors/*',
+              'vendors/*.css',
             ),
             'output_filename': 'css/sooljottagrae.css',
+        }
+    },
+
+    'JAVASCRIPT':{
+        'javascripts':{
+            'source_filenames':{
+                'js/*.js',
+                'js/flot-charts/*.js',
+            }    
         }
     },
 }
