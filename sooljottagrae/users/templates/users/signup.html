@@ -1,71 +1,86 @@
 {% extends "base.html" %}
 
+
 {% block content %}
-<section>
-  <form id="signup" class="form-horizontal" method="post" action="{% url "users:signup" %}" enctype="multipart/form-data">
-    {% csrf_token %}
- 
-    <!-- Username input-->
-    <div class="row control-group">
-        <div class="form-group col-xs-12 floating-label-form-group controls">
-            {{ signupform.username.label_tag }}
-            {{ signupform.username }}
-            <span class="field-error">
-            {{ signupform.username.errors|striptags }}
-            </span>
-        </div>
-    </div>
- 
-    <!-- Email input-->
-    <div class="row control-group">
-        <div class="form-group col-xs-12 floating-label-form-group controls">
-            {{ signupform.email.label_tag }}
-            {{ signupform.email }}
-            <span class="field-error">
-            {{ signupform.email.errors|striptags }}
-            </span>
-        </div>
-    </div>
- 
-    {{ signupform.nickname.label_tag }}
-    {{ signupform.nickname }}
-    {{ signupform.nickname.errors|striptags }}
- 
-    <!-- Password1 input-->
-    <div class="row control-group">
-        <div class="form-group col-xs-12 floating-label-form-group controls">
-            {{ signupform.password1.label_tag }}
-            {{ signupform.password1 }}
-            <span class="field-error">
-            {{ signupform.password1.errors|striptags }}
-            </span>
-        </div>
-    </div>
- 
-    <!-- Password2 input-->
-    <div class="row control-group">
-        <div class="form-group col-xs-12 floating-label-form-group controls">
-            {{ signupform.password2.label_tag }}
-            {{ signupform.password2 }}
-            <span class="field-error">
-            {{ signupform.password2.errors|striptags }}
-            </span>
-        </div>
-    </div>
-    <input type="submit" value="signup"> 
-    <br>
- 
-    <!-- Button -->
-    <div class="row">
-        <div class="form-group col-xs-12">
-            Sign Up
-            <hr>
- 
-            Or <a href="{% url "users:login" %}"><u>log in</u></a>
-            if you have an account.
- 
-        </div>
-    </div>
-  </form>
-</section>
+    <head>
+         <title>술조타그래 회원가입</title>
+    </head>
+    
+    <body class="login-content">
+        <!-- Signup  -->
+        <section class="lc-block toggled" id="l-signup">
+            <form id="signup" class="form-horizontal" method="post" action="{% url "users:signup" %}" enctype="multipart/form-data">
+                {% csrf_token %}
+                <!-- Username input-->
+                <div class="input-group m-b-20">
+                    <span class="input-group-addon"><i class="md md-person"></i></span>
+                        <div class="fg-line">
+                            <input type="text" class="form-control" placeholder="nickname을 적어주세요."/>
+                            <span class="field-error">
+                            {{ signupform.username.errors|striptags }}
+                            </span>
+                        </div>
+                    </span>
+                </div>
+             
+                <!-- E-mail input-->
+                <div class="input-group m-b-20">
+                    <span class="input-group-addon"><i class="md md-mail"></i></span>
+                        <div class="fg-line">
+                            <input type="text" class="form-control" placeholder="email을 적어주세요."/>
+                            <span class="field-error">
+                                {{ signupform.email.errors|striptags }}
+                            </span>
+                        </div>
+                    </span>
+                </div>
+               
+
+                <!-- Password1 input-->
+                <div class="input-group m-b-20">
+                    <span class="input-group-addon"><i class="md md-accessibility"></i></span>
+                    <div class="fg-line">
+                        <input type="password" class="form-control" placeholder="password을 적어주세요."/>
+                        <span class="field-error">
+                            {{ signupform.password1.errors|striptags }}
+                        </span>
+                    </div>
+                </div>
+         
+                <!-- Password2 input-->
+                <div class="input-group m-b-20">
+                    <span class="input-group-addon"><i class="md md-accessibility"></i></span>
+                    <div class="fg-line">
+                        <input type="password" class="form-control" placeholder="password을 한번 더 적어주세요."/>
+                        <span class="field-error">
+                            {{ signupform.password2.errors|striptags }}
+                        </span>
+                    </div>
+                </div>
+             
+                <button class="btn bgm-cyan waves-effect waves-button waves-float" type="submit" value="signup">등록</button>
+                <br>
+             
+                <!-- Button -->
+                <div class="row">
+                    <div class="form-group col-xs-12">
+                       <hr> 
+                        가입 되어 있다면
+                        <a href="{% url "users:login" %}"><u>log in</u></a>
+                        해주시길 바랍니다.
+                    </div>
+                </div>
+
+               <a href="" class="btn btn-login btn-danger btn-float"><i class="md md-arrow-forward"></i></a>
+            </form>
+        </section>
+        <!-- Signup end -->
+
+
+        <!-- Javascript Libraries -->
+        <script src="/static/js/jquery-2.1.1.min.js"></script>
+        <script src="/static/js/bootstrap.min.js"></script>
+        <script src="/static/vendors/waves/waves.min.js"></script>
+        <script src="/static/js/functions.js"></script>
+     </body>
 {% endblock %}

@@ -1,0 +1,145 @@
+﻿<html class="login-content"><head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>술조타그래</title>
+
+        <!-- Vendor CSS -->
+        <link href="vendors/fullcalendar/fullcalendar.css" rel="stylesheet">
+        <link href="vendors/animate-css/animate.min.css" rel="stylesheet">
+        <link href="vendors/sweet-alert/sweet-alert.min.css" rel="stylesheet">
+        <link href="vendors/light-gallery/lightGallery.min.css" rel="stylesheet">
+        <link href="vendors/material-icons/material-design-iconic-font.min.css" rel="stylesheet">
+        <link href="vendors/socicon/socicon.min.css" rel="stylesheet">
+            
+        <!-- CSS -->
+        <link href="css/app.min.1.css" rel="stylesheet">
+        <link href="css/app.min.2.css" rel="stylesheet">
+
+    </head>
+    <body class="login-content">
+
+        <!-- Login -->
+        <div class="lc-block toggled" id="l-login">
+            <div class="input-group m-b-20">
+                <span class="input-group-addon"><i class="md md-person"></i></span>
+                <div class="fg-line">
+                    <input type="text" name="nickname" class="form-control" placeholder="nickname을 적어주세요." required="">
+                </div>
+            </div>
+            
+            <div class="input-group m-b-20">
+                <span class="input-group-addon">
+                    <i class="md md-accessibility"></i>
+                </span>
+                <div class="fg-line">
+                    <input type="password" name="password" class="form-control" placeholder="Password를 적어주세요." required="">
+                </div>
+            </div>
+            
+            <div class="clearfix"></div>
+            
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" value="">
+                    <i class="input-helper"></i>
+                    Keep me signed in
+                </label>
+            </div>
+             <a href="" class="btn btn-login btn-danger btn-float waves-effect waves-button waves-float" value="login">
+                 <i class="md md-arrow-forward"></i>
+             </a>
+            
+            <ul class="login-navigation">
+                <li data-block="#l-register" class="btn bgm-pink waves-effect waves-button waves-float waves-effect waves-button waves-float">Register</li>
+            </ul>
+        </div>
+        
+        <!-- Register -->
+       <div class="lc-block" id="l-register">
+            <div class="input-group m-b-20">
+                <span class="input-group-addon"><i class="md md-person"></i></span>
+                <div class="fg-line">
+                    <input type="text" class="form-control" placeholder="nickname을 적어주세요.">
+                    <span class="field-error">
+                    </span>
+                </div>
+            </div>
+            
+            <div class="input-group m-b-20">
+                <span class="input-group-addon"><i class="md md-mail"></i></span>
+                <div class="fg-line">
+                    <input type="text" class="form-control" placeholder="email을 적어주세요.">
+                    <span class="field-error">
+                    </span>                   
+                </div>
+            </div>
+            
+            <div class="input-group m-b-20">
+                <span class="input-group-addon"><i class="md md-accessibility"></i></span>
+                <div class="fg-line">
+                    <input type="password" class="form-control" placeholder="password를 적어주세요.">
+                    <span class="field-error">
+                    </span>   
+                </div>
+            </div>
+
+            <div class="input-group m-b-20">
+                <span class="input-group-addon"><i class="md md-accessibility"></i></span>
+                <div class="fg-line">
+                    <input type="password" class="form-control" placeholder="password를 한번 더 적어주세요.">
+                    <span class="field-error">
+                    </span>   
+                </div>
+            </div>
+            
+            <div class="clearfix"></div>
+            
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" value="">
+                    <i class="input-helper"></i>
+                    Accept the license agreement
+                </label>
+            </div>
+            
+            <a href="" class="btn btn-login btn-danger btn-float waves-effect waves-button waves-float"><i class="md md-arrow-forward"></i></a>
+            <button type="submit" class="btn bgm-red waves-effect waves-button waves-float waves-effect waves-button waves-float" value="signup">등록</button>
+
+            <ul class="login-navigation">
+                <li data-block="#l-login" class="btn bgm-green waves-effect waves-button waves-float waves-effect waves-button waves-float">Login</li>
+            </ul>
+        </div>
+              
+
+        <!-- Javascript Libraries -->
+        <script src="js/jquery-2.1.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        
+        <script src="vendors/flot/jquery.flot.min.js"></script>
+        <script src="vendors/flot/jquery.flot.resize.min.js"></script>
+        <script src="vendors/flot/plugins/curvedLines.js"></script>
+        <script src="vendors/sparklines/jquery.sparkline.min.js"></script>
+        <script src="vendors/easypiechart/jquery.easypiechart.min.js"></script>
+        
+        <script src="vendors/fullcalendar/lib/moment.min.js"></script>
+        <script src="vendors/fullcalendar/fullcalendar.min.js"></script>
+        <script src="vendors/simpleWeather/jquery.simpleWeather.min.js"></script>
+        <script src="vendors/auto-size/jquery.autosize.min.js"></script>
+        <script src="vendors/nicescroll/jquery.nicescroll.min.js"></script>
+        <script src="vendors/waves/waves.min.js"></script>
+        <script src="vendors/bootstrap-growl/bootstrap-growl.min.js"></script>
+        <script src="vendors/light-gallery/lightGallery.min.js"></script> 
+        <script src="vendors/mediaelement/mediaelement-and-player.min.js"></script>
+        <script src="vendors/sweet-alert/sweet-alert.min.js"></script>
+        
+        <script src="js/flot-charts/curved-line-chart.js"></script>
+        <script src="js/flot-charts/line-chart.js"></script>
+        <script src="js/charts.js"></script>
+        
+        <script src="js/charts.js"></script>
+        <script src="js/functions.js"></script>
+        <script src="js/demo.js"></script>
+        
+    </body>
+</html>

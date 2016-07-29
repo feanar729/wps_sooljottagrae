@@ -1,22 +1,26 @@
 {% load pipeline %}<!DOCTYPE html>
 <html>
- <head>
-    <!-- Vendor CSS -->
-    <link href="/static/vendors/animate-css/animate.min.css" rel="stylesheet">
-    <link href="/static/vendors/sweet-alert/sweet-alert.min.css" rel="stylesheet">
-    <link href="/static/vendors/material-icons/material-design-iconic-font.min.css" rel="stylesheet">
-    <link href="/static/vendors/socicon/socicon.min.css" rel="stylesheet">
-        
-    <!-- CSS -->
-    <link href="/static/css/app.min.1.css" rel="stylesheet">
-    <link href="/static/css/app.min.2.css" rel="stylesheet">
- </head>
+    <head>
+        {% stylesheet "sooljottagrae" %}
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>술조타그래</title>
+
+
+        <style type="text/css">
+            .toggle-switch .ts-label {
+                min-width: 130px;
+           }
+        </style>  
+
+     </head>
  <body>
    {% include "partials/messages.html" %}
    <section id="content">
      {% block content %}{% endblock %}
    </section>
-   {% javascript "posts" %}
+   {% javascript "jssooljottagrae" %}
    {% block custom_javascripts %}{% endblock %}
  </body>
 </html>

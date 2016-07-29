@@ -1,11 +1,212 @@
 {% load pipeline %}<!DOCTYPE html>
-<html>
- <head>
-   {% stylesheet "sooljottagrae" %}
- </head>
- <body>
-   <section id="content">
-<h1>This is sooljottagrae!</h1>
-   </section>
- </body>
-</html>
+<!--[if IE 9 ]><html class="ie9"><![endif]-->
+    <head>
+        <title>술조타그래 Main Page</title>
+    </head>
+
+    {% block content %}
+                   
+                <!-- main 게시물 start -->
+                <div class="page-body">
+                    <!-- profile line -->
+                    <div class="card">
+                        <div class="profile-header row">
+                            <div class="col-lg-2 col-md-8 col-sm-16 text-center">
+                                <img class="img-responsive" src="img/profile-pics/profile-pic-2.jpg" alt/> <!-- 이미지파일 업로드 -->
+                            </div>
+                            <div class="col-lg-5 col-md-8 col-sm-12 profile-info">
+                                <div class="header-fullname">nickname </div> <!-- 닉네임 명으로 연결 -->
+                                <a href="#" class="btn btn-success waves-effect waves-button waves-float">
+                                    <i class="fa fa-check"></i>
+                                    Following
+                                </a>
+                                <div class="header-information">
+                                    <h2>test 게시물 삽입 기록.</h2>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12 profile-stats">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 stats-col">
+                                        <div class="stats-value pink">284</div> <!-- 유저 숫자로 count -->
+                                        <div class="stats-title">FOLLOWING</div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 stats-col">
+                                        <div class="stats-value pink">803</div> <!-- 유저 숫자로 count -->
+                                        <div class="stats-title">FOLLOWERS</div> 
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 stats-col">
+                                        <div class="stats-value pink">1207</div>
+                                        <div class="stats-title">POSTS</div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 inlinestats-col">
+                                        <i class="glyphicon glyphicon-map-marker"></i> Boston
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 inlinestats-col">
+                                        Rate: <strong>$250</strong>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 inlinestats-col">
+                                        Age: <strong>24</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- profile line end -->
+
+                    <!-- 게시물 start -->
+                    <div class="card">
+                        <div class="card-header">
+                        <!-- photo, video -->
+                        <div class="profile-body">
+                            <div class="pmb-block clearfix photos">
+                                <div class="p-header">
+                                    <ul class="p-menu">
+                                        <li class="active"><a href=""><i class="md md-insert-photo"></i> Photos</a></li>
+                                        <li class="active"><a href=""><i class="md md-video-collection"></i> Videos</a></li>
+                                    </ul>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="pmb-block clearfix photos">
+                            <div class="card-body card-padding">
+                                <div class="lightbox row">
+                                    <div data-src="media/gallery/1.jpg" class="col-md-3 col-sm-4 col-xs-6">
+                                        <div class="lightbox-item p-item">
+                                            <img src="media/gallery/thumbs/1.jpg" alt="" />
+                                        </div>
+                                    </div>
+                                    
+                                    <div data-src="media/gallery/2.jpg" class="col-md-3 col-sm-4 col-xs-6">
+                                        <div class="lightbox-item p-item">
+                                            <img src="media/gallery/thumbs/2.jpg" alt="" />
+                                        </div>
+                                    </div>
+                                    
+                                    <div data-src="media/gallery/3.jpg" class="col-md-3 col-sm-4 col-xs-6">
+                                        <div class="lightbox-item p-item">
+                                            <img src="media/gallery/thumbs/3.jpg" alt="" />
+                                        </div>
+                                    </div>
+                                    
+                                    <div data-src="media/gallery/4.jpg" class="col-md-3 col-sm-4 col-xs-6">
+                                        <div class="lightbox-item p-item">
+                                            <img src="media/gallery/thumbs/4.jpg" alt="" />
+                                        </div>
+                                    </div>
+                                    
+                                    <div data-src="media/gallery/5.jpg" class="col-md-3 col-sm-4 col-xs-6">
+                                        <div class="lightbox-item p-item">
+                                            <img src="media/gallery/thumbs/5.jpg" alt="" />
+                                        </div>
+                                    </div>
+                                    <div data-src="media/gallery/6.jpg" class="col-md-3 col-sm-4 col-xs-6">
+                                        <div class="lightbox-item p-item">
+                                            <img src="media/gallery/thumbs/6.jpg" alt="" />
+                                        </div>
+                                    </div>
+                                    <div data-src="media/gallery/7.jpg" class="col-md-3 col-sm-4 col-xs-6">
+                                        <div class="lightbox-item p-item">
+                                            <img src="media/gallery/thumbs/7.jpg" alt="" />
+                                        </div>
+                                    </div>
+                                    <div data-src="media/gallery/8.jpg" class="col-md-3 col-sm-4 col-xs-6">
+                                        <div class="lightbox-item p-item">
+                                            <img src="media/gallery/thumbs/8.jpg" alt="" />
+                                        </div>
+                                    </div>
+                                    <div data-src="media/gallery/9.jpg" class="col-md-3 col-sm-4 col-xs-6">
+                                        <div class="lightbox-item p-item">
+                                            <img src="media/gallery/thumbs/9.jpg" alt="" />
+                                        </div>
+                                    </div>
+                                    <div data-src="media/gallery/10.jpg" class="col-md-3 col-sm-4 col-xs-6">
+                                        <div class="lightbox-item p-item">
+                                            <img src="media/gallery/thumbs/10.jpg" alt="" />
+                                        </div>
+                                    </div>
+                                    <div data-src="media/gallery/11.jpg" class="col-md-3 col-sm-4 col-xs-6">
+                                        <div class="lightbox-item p-item">
+                                            <img src="media/gallery/thumbs/11.jpg" alt="" />
+                                        </div>
+                                    </div>
+                                    <div data-src="media/gallery/12.jpg" class="col-md-3 col-sm-4 col-xs-6">
+                                        <div class="lightbox-item p-item">
+                                            <img src="media/gallery/thumbs/12.jpg" alt="" />
+                                        </div>
+                                    </div>
+                                    <div data-src="media/gallery/13.jpg" class="col-md-3 col-sm-4 col-xs-6">
+                                        <div class="lightbox-item p-item">
+                                            <img src="media/gallery/thumbs/13.jpg" alt="" />
+                                        </div>
+                                    </div>
+                                    <div data-src="media/gallery/14.jpg" class="col-md-3 col-sm-4 col-xs-6">
+                                        <div class="lightbox-item p-item">
+                                            <img src="media/gallery/thumbs/14.jpg" alt="" />
+                                        </div>
+                                    </div>
+                                    <div data-src="media/gallery/15.jpg" class="col-md-3 col-sm-4 col-xs-6">
+                                        <div class="lightbox-item p-item">
+                                            <img src="media/gallery/thumbs/15.jpg" alt="" />
+                                        </div>
+                                    </div>
+                                    <div data-src="media/gallery/16.jpg" class="col-md-3 col-sm-4 col-xs-6">
+                                        <div class="lightbox-item p-item">
+                                            <img src="media/gallery/thumbs/16.jpg" alt="" />
+                                        </div>
+                                    </div>
+
+                                    <div class="clearfix"></div>    
+                                    <div class="load-more m-t-30">
+                                        <a href=""><i class="md md-refresh"></i> Load More...</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 게시물 end -->
+                </div>
+                <!-- main 게시물 end -->
+
+            </section>
+        </section>
+    </body>
+    <!-- body pages end-->   
+
+    <!-- Javascript Libraries -->
+    <script src="/static/js/jquery-2.1.1.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    
+    <script src="/static/vendors/flot/jquery.flot.min.js"></script>
+    <script src="/static/vendors/flot/jquery.flot.resize.min.js"></script>
+    <script src="/static/vendors/flot/plugins/curvedLines.js"></script>
+    <script src="/static/vendors/sparklines/jquery.sparkline.min.js"></script>
+    <script src="/static/vendors/easypiechart/jquery.easypiechart.min.js"></script>
+    
+    <script src="/static/vendors/fullcalendar/lib/moment.min.js"></script>
+    <script src="/static/vendors/fullcalendar/fullcalendar.min.js"></script>
+    <script src="/static/vendors/simpleWeather/jquery.simpleWeather.min.js"></script>
+    <script src="/static/vendors/auto-size/jquery.autosize.min.js"></script>
+    <script src="/static/vendors/nicescroll/jquery.nicescroll.min.js"></script>
+    <script src="/static/vendors/waves/waves.min.js"></script>
+    <script src="/static/vendors/bootstrap-growl/bootstrap-growl.min.js"></script>
+    <script src="/static/vendors/light-gallery/lightGallery.min.js"></script> 
+    <script src="/static/vendors/mediaelement/mediaelement-and-player.min.js"></script>
+    <script src="/static/vendors/sweet-alert/sweet-alert.min.js"></script>
+    
+    <script src="/static/js/flot-charts/curved-line-chart.js"></script>
+    <script src="/static/js/flot-charts/line-chart.js"></script>
+    <script src="/static/js/charts.js"></script>        
+    <script src="/static/js/charts.js"></script>
+    <script src="/static/js/functions.js"></script>
+    <script src="/static/js/demo.js"></script>
+
+        
+    </body>
+  </html>
+{% endblock %}
